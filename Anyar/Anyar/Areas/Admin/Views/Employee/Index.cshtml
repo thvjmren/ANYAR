@@ -1,0 +1,84 @@
+﻿@model List<GetEmployeeVM>
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Employees</h4>
+
+            <a asp-action="create" class="btn btn-info">Create</a>
+
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                Id
+                            </th>
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                Photo
+                            </th>
+                            <th>
+                                Position
+                            </th>
+                            <th>
+                                Instagram
+                            </th>
+                            <th>
+                                X
+                            </th>
+                            <th>
+                                Facebook
+                            </th>
+                            <th>
+                                Linkedin
+                            </th>
+                            <th>
+                                Settings
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (GetEmployeeVM getEmployeeVM in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @getEmployeeVM.Id
+                                </td>
+                                <td>
+                                    @getEmployeeVM.Name
+                                </td>
+                                <td>
+                                    <img src="~/assets/img/team/@getEmployeeVM.Image" />
+                                </td>
+                                <td>
+                                    @getEmployeeVM.PositionName
+                                </td>
+                                <td>
+                                    @getEmployeeVM.Instagram
+                                </td>
+                                <td>
+                                    @getEmployeeVM.X
+                                </td>
+                                <td>
+                                    @getEmployeeVM.Facebook
+                                </td>
+                                <td>
+                                    @getEmployeeVM.Linkedin
+                                </td>
+                                <td>
+                                    <a asp-action="update" asp-route-id="@getEmployeeVM.Id" class="btn btn-primary">Update</a>
+                                    <a asp-action="delete" asp-route-id="@getEmployeeVM.Id" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>   

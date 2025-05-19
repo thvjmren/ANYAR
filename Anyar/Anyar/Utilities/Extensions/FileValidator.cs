@@ -23,6 +23,17 @@ namespace Pronia.Utilities.Extensions
             return false;
         }
 
+        public static string _getPath(params string[] roots)
+        {
+            string path = string.Empty;
+
+            for (int i = 0; i < roots.Length; i++)
+            {
+                path = Path.Combine(path, roots[i]);
+            }
+            return path;
+        }
+
         public static async Task<string> CreateFileAsync(this IFormFile file, params string[] roots)
         {
             string extension = Path.GetExtension(file.FileName);
@@ -43,22 +54,11 @@ namespace Pronia.Utilities.Extensions
         {
             string path = _getPath(roots);
             path = Path.Combine(path, fileName);
+
             if (File.Exists(path))
             {
                 File.Delete(path);
             }
-        }
-
-        private static string _getPath(params string[] roots)
-        {
-            string path = string.Empty;
-
-            for (int i = 0; i < roots.Length; i++)
-            {
-                path = Path.Combine(path, roots[i]);
-            }
-
-            return path;
         }
     }
 }

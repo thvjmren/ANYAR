@@ -831,7 +831,7 @@
         },
         "runtime": {
           "lib/net8.0/Microsoft.Build.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         }
       },
@@ -844,7 +844,7 @@
         },
         "runtime": {
           "lib/net8.0/Microsoft.Build.Framework.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         }
       },
@@ -878,12 +878,12 @@
         },
         "compile": {
           "lib/net7.0/Microsoft.CodeAnalysis.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/net7.0/Microsoft.CodeAnalysis.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "resource": {
@@ -935,12 +935,12 @@
         },
         "compile": {
           "lib/net7.0/Microsoft.CodeAnalysis.CSharp.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/net7.0/Microsoft.CodeAnalysis.CSharp.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "resource": {
@@ -997,12 +997,12 @@
         },
         "compile": {
           "lib/net7.0/Microsoft.CodeAnalysis.CSharp.Features.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/net7.0/Microsoft.CodeAnalysis.CSharp.Features.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "resource": {
@@ -1057,12 +1057,12 @@
         },
         "compile": {
           "lib/net7.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/net7.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "resource": {
@@ -1133,12 +1133,12 @@
         },
         "compile": {
           "lib/net7.0/Microsoft.CodeAnalysis.Features.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/net7.0/Microsoft.CodeAnalysis.Features.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "resource": {
@@ -1204,12 +1204,12 @@
         },
         "compile": {
           "lib/net7.0/Microsoft.CodeAnalysis.Scripting.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/net7.0/Microsoft.CodeAnalysis.Scripting.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "resource": {
@@ -1266,12 +1266,12 @@
         },
         "compile": {
           "lib/net7.0/Microsoft.CodeAnalysis.Workspaces.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/net7.0/Microsoft.CodeAnalysis.Workspaces.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "resource": {
@@ -1344,12 +1344,12 @@
         },
         "compile": {
           "ref/net6.0/Microsoft.Data.SqlClient.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/net6.0/Microsoft.Data.SqlClient.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtimeTargets": {
@@ -1388,12 +1388,12 @@
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.DiaSymReader.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.DiaSymReader.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         }
       },
@@ -1877,7 +1877,7 @@
         },
         "runtime": {
           "lib/net8.0/Microsoft.NET.StringTools.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         }
       },
@@ -1903,12 +1903,12 @@
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         }
       },
@@ -1972,12 +1972,12 @@
         },
         "compile": {
           "lib/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll": {
-            "related": ".runtimeconfig.json;.xml"
+            "related": ".xml;.runtimeconfig.json"
           }
         },
         "runtime": {
           "lib/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll": {
-            "related": ".runtimeconfig.json;.xml"
+            "related": ".xml;.runtimeconfig.json"
           }
         }
       },
@@ -7927,23 +7927,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\I novbe\\.nuget\\packages\\": {},
+    "C:\\Users\\Rana\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\I novbe\\Desktop\\Anyar\\Anyar\\Anyar.csproj",
+      "projectUniqueName": "C:\\Users\\Rana\\Desktop\\ANYAR\\Anyar\\Anyar\\Anyar.csproj",
       "projectName": "Anyar",
-      "projectPath": "C:\\Users\\I novbe\\Desktop\\Anyar\\Anyar\\Anyar.csproj",
-      "packagesPath": "C:\\Users\\I novbe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\I novbe\\Desktop\\Anyar\\Anyar\\obj\\",
+      "projectPath": "C:\\Users\\Rana\\Desktop\\ANYAR\\Anyar\\Anyar\\Anyar.csproj",
+      "packagesPath": "C:\\Users\\Rana\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Rana\\Desktop\\ANYAR\\Anyar\\Anyar\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\I novbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Rana\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7952,7 +7952,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7965,7 +7964,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -8017,7 +8022,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -3,7 +3,6 @@ using Anyar.Models;
 using Anyar.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Security.AccessControl;
 
 namespace Anyar.Areas.Admin.Controllers
 {
@@ -38,7 +37,7 @@ namespace Anyar.Areas.Admin.Controllers
         {
             if (!ModelState.IsValid) return View();
 
-            bool result = await _context.Positions.AnyAsync(p=>p.Name==positionVM.Name);
+            bool result = await _context.Positions.AnyAsync(p => p.Name == positionVM.Name);
             if (result)
             {
                 ModelState.AddModelError(nameof(positionVM.Name), $"{positionVM.Name} is already exist");
@@ -60,13 +59,52 @@ namespace Anyar.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
 
-            Position? position = await _context.Positions.FirstOrDefaultAsync(p=>p.Id==id);
+            Position? position = await _context.Positions.FirstOrDefaultAsync(p => p.Id == id);
 
             if (position is null) return NotFound();
 
             _context.Positions.Remove(position);
             await _context.SaveChangesAsync();
 
+            return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> Update(int? id)
+        {
+            if (id is null || id <= 0) return BadRequest();
+
+            Position? position = await _context.Positions.FirstOrDefaultAsync(p => p.Id == id);
+
+            if (position is null) return NotFound();
+
+            UpdatePositionVM positionVM = new UpdatePositionVM()
+            {
+                Name = position.Name
+            };
+            return View(positionVM);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(int? id, UpdatePositionVM positionVM)
+        {
+            if (!ModelState.IsValid) return View();
+
+            bool result = await _context.Positions.AnyAsync(p => p.Name == positionVM.Name && p.Id != id);
+            if (result)
+            {
+                ModelState.AddModelError(nameof(Position.Name), $"position:{positionVM.Name} is already exists");
+                return View();
+            }
+
+            Position? existed = await _context.Positions.FirstOrDefaultAsync(p => p.Id == id);
+            if (existed.Name == positionVM.Name)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            existed.Name = positionVM.Name;
+
+            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
     }
